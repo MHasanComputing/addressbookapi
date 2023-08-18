@@ -1,4 +1,7 @@
 package com.addressbook.addressbook.record;
+import java.util.*;
+
+import java.util.Objects;
 
 public class Record {
     private Long id;
@@ -72,4 +75,10 @@ public class Record {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(first_name, last_name, phone, email);
+    }
 }
+
