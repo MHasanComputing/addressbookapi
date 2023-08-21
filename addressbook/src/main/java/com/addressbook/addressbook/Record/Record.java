@@ -100,6 +100,20 @@ public class Record {
     public int hashCode() {
         return Objects.hash(first_name, last_name, phone, email);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        boolean result;
+        if (this == o) {
+            result = true;
+        } else if (o == null || getClass() != o.getClass()) {
+            result = false;
+        } else {
+            Record record = (Record) o;
+            result = Objects.equals(id, record.id) && Objects.equals(first_name, record.first_name) && Objects.equals(last_name, record.last_name) && Objects.equals(phone, record.phone) && Objects.equals(email, record.email);
+        }
+        return result;
+    }
 }
 
 
