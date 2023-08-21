@@ -5,13 +5,13 @@ Used Postman for API protocols.
 
 
 Get records from addressbook as list  - 
-"http://localhost:8080/api/v1/address-book-one/records"
+###### "http://localhost:8080/api/v1/address-book-one/records"
 
 Get Specific record  - 
-"http://localhost:8080/api/v1/address-book-one/view/{recordId}" example = "http://localhost:8080/api/v1/address-book-one/view/2"
+###### "http://localhost:8080/api/v1/address-book-one/view/{recordId}" example = "http://localhost:8080/api/v1/address-book-one/view/2"
 
 Add record - 
-POST "http://localhost:8080/api/v1/address-book-one/add/"
+###### POST "http://localhost:8080/api/v1/address-book-one/add/"
 
 Requestbody:
 {
@@ -24,11 +24,11 @@ Requestbody:
 
 Delete record -
 
-Delete "http://localhost:8080/api/v1/address-book-one/delete/{recordId} example =  http://localhost:8080/api/v1/address-book-one/delete/2"
+###### Delete "http://localhost:8080/api/v1/address-book-one/delete/{recordId} example =  http://localhost:8080/api/v1/address-book-one/delete/2"
 
 Edit record - 
 
-Patch "http://localhost:8080/api/v1/address-book-one/edit/{recordId} example =  http://localhost:8080/api/v1/address-book-one/edit/2"
+###### Patch "http://localhost:8080/api/v1/address-book-one/edit/{recordId} example =  http://localhost:8080/api/v1/address-book-one/edit/2"
 
 RequestBody paylaod - 
 {
